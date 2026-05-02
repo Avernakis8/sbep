@@ -271,22 +271,19 @@ mod_corridor_segments = {
   [8] = "models/cerus/modbridge/core/s-121.mdl",
   [9] = "models/cerus/modbridge/core/s-221.mdl",
   [10] = "models/cerus/modbridge/core/s-321.mdl",
-  [11] = "models/cerus/modbridge/core/sc121.mdl",
-  [12] = "models/cerus/modbridge/core/c-21.mdl",
-  [13] = "models/cerus/modbridge/core/t-21.mdl",
-  [14] = "models/cerus/modbridge/core/x-21.mdl",
-  [15] = "models/cerus/modbridge/core/s-131.mdl",
-  [16] = "models/cerus/modbridge/core/s-231.mdl",
-  [17] = "models/cerus/modbridge/core/s-331.mdl",
-  [18] = "models/cerus/modbridge/core/sc-131.mdl",
-  [19] = "models/cerus/modbridge/core/c-331.mdl",
-  [20] = "models/cerus/modbridge/core/t-331.mdl",
-  [21] = "models/cerus/modbridge/core/x-331.mdl",
-  [22] = "models/cerus/modbridge/core/s-332.mdl",
-  [23] = "models/cerus/modbridge/core/sc-332.mdl",
-  [24] = "models/cerus/modbridge/core/c-332.mdl",
-  [25] = "models/cerus/modbridge/core/t-332.mdl",
-  [26] = "models/cerus/modbridge/core/x-332.mdl",
+  [11] = "models/cerus/modbridge/core/sc-121.mdl",
+  [12] = "models/cerus/modbridge/core/s-131.mdl",
+  [13] = "models/cerus/modbridge/core/s-231.mdl",
+  [14] = "models/cerus/modbridge/core/s-331.mdl",
+  [15] = "models/cerus/modbridge/core/sc-131.mdl",
+  [16] = "models/cerus/modbridge/core/c-331.mdl",
+  [17] = "models/cerus/modbridge/core/t-331.mdl",
+  [18] = "models/cerus/modbridge/core/x-331.mdl",
+  [19] = "models/cerus/modbridge/core/s-332.mdl",
+  [20] = "models/cerus/modbridge/core/sc-332.mdl",
+  [21] = "models/cerus/modbridge/core/c-332.mdl",
+  [22] = "models/cerus/modbridge/core/t-332.mdl",
+  [23] = "models/cerus/modbridge/core/x-332.mdl",
 }
 
 mod_corvette_fighters = {
@@ -1108,7 +1105,7 @@ function populateContent (viewPanel, modelTable)
 end
 
 function populate (nodeName, modelTable, pnlContent, masterNode, viewPanel)
-  local node = masterNode:AddNode(nodeName, "icon16/folder_database.png")
+  local node = masterNode:AddNode(nodeName, "icon16/world_go.png")
   
   node.DoClick = function()
 	viewPanel:Clear(true)
@@ -1121,7 +1118,7 @@ end
 hook.Add("PopulateContent", "SBEP Models", function( pnlContent, tree, node)
   local viewPanel = vgui.Create("ContentContainer", pnlContent)
   viewPanel:SetVisible(false)
-  local masterNode = node:AddNode("SBEP Models", "icon16/folder_database.png")
+  local masterNode = node:AddNode("SBEP Models", "icon16/bullet_star.png")
   
   for k,v in pairs(sbep_modellist) do
     populate(k, v, pnlContent, masterNode, viewPanel)
