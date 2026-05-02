@@ -1105,7 +1105,7 @@ function populateContent (viewPanel, modelTable)
 end
 
 function populate (nodeName, modelTable, pnlContent, masterNode, viewPanel)
-  local node = masterNode:AddNode(nodeName, "icon16/world_go.png")
+  local node = masterNode:AddNode(nodeName, "icon16/bullet_star.png")
   
   node.DoClick = function()
 	viewPanel:Clear(true)
@@ -1118,7 +1118,7 @@ end
 hook.Add("PopulateContent", "SBEP Models", function( pnlContent, tree, node)
   local viewPanel = vgui.Create("ContentContainer", pnlContent)
   viewPanel:SetVisible(false)
-  local masterNode = node:AddNode("SBEP Models", "icon16/bullet_star.png")
+  local masterNode = node:AddNode("SBEP Models", "icon16/world_go.png")
   
   for k,v in pairs(sbep_modellist) do
     populate(k, v, pnlContent, masterNode, viewPanel)
