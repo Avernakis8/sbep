@@ -320,7 +320,7 @@ mod_elevators = {
   [22] = "models/cerus/modbridge/core/s-332ep.mdl",
 }
 
-mod_engines_weapons_prefabs_and_dorrs = {
+mod_engines_weapons_prefabs_and_doors = {
   [1] = "models/cerus/modbridge/misc/engines/eng_sq11b.mdl",
   [2] = "models/cerus/modbridge/misc/weapons/wep_ion1.mdl",
   [3] = "models/cerus/modbridge/core/prefab/crew_331.mdl",
@@ -444,7 +444,7 @@ mod_spartan = {
   [12] = "models/cerus/modbridge/core/spartan/cv-11-31.mdl",
 }
 
-mod_splitter = {
+mod_splitters = {
   [1] = "models/cerus/modbridge/core/tc-131.mdl",
   [2] = "models/cerus/modbridge/core/t-131.mdl",
   [3] = "models/cerus/modbridge/core/c-131r.mdl",
