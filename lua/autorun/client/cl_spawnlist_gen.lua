@@ -1233,7 +1233,7 @@ sbep_modellist = {
     ["MedBridge Parts"] = {med_bridges, med_carrier_deck, med_doubles, med_engines, med_entry, med_hangers, med_misc, med_singles, med_triples},
     ["ModBridge Parts"] = {mod_accessories, mod_cockpits_bridges_and_glass_corridors, mod_corridor_segments, mod_corvette_fighters, mod_elevators, mod_engines_weapons_prefabs_and_doors, mod_external_decor, mod_height_transfer, mod_spartan, mod_splitters},
     ["SBMP Parts"] = {sbmp_fighters, sbmp_freighters, sbmp_ship_modules, sbmp_slyfo, sbmp_weapons},
-    ["Other"] = {other_sbep_community}
+    ["Other"] = {other_sbep_community},
 	["Spacebuild"] = {spacebuild_base}
 }
 
